@@ -12,17 +12,9 @@ The official repository is:
 
 The repository may be private before the workshop and made available by the organizers on the workshop day. Please use the access link provided by the organizers.
 
-## Preparation repository
-
-Complete the laptop setup using the separate preparation repository:
-
-**[github.com/ai-krk/woman_in_tech_prep](https://github.com/ai-krk/woman_in_tech_prep)**
-
-It contains the preparation PDF, the preflight notebook and the pinned requirements needed before the workshop. Please complete it at least 48 hours in advance.
-
 ## What you will build
 
-You will create and inspect a small recruitment-practice coach for a fictional candidate preparing for an interview. The lab shows the difference between:
+You will create and inspect a small recruitment-practice coach for a fictional interview candidate. The lab shows the difference between:
 
 - what a model decides, such as whether to request a tool;
 - what Python executes, such as a permitted role or evidence lookup; and
@@ -32,21 +24,44 @@ The exercises include role and evidence lookups, interview-question practice, re
 
 ## Files in this repository
 
-- **`PREPARE_YOUR_LAPTOP_EN.pdf`** - Setup instructions to complete before the workshop. Allow 30–45 minutes and, where possible, finish at least 48 hours in advance.
-- **`00_Preflight_EN.ipynb`** - Pre-workshop checks for Python, packages, the local environment and, when approved, Gemini access.
+- **`00_Preflight_EN.ipynb`** - Checks for Python, packages, the local environment and, when approved, Gemini access.
 - **`01_Recruitment_Coach_EN.ipynb`** - The main 120-minute guided lab, *Build your Recruitment Coach*. It contains 26 short code cells covering model requests, Python tools, evidence checks, agent flow, local tests and a personal change.
+- **`02_Agent_Playground_EN.ipynb`** - A playground for changing roles, prompts, tones, evidence and agent recipes. This is an additional notebook, not covered during the workshop, for those who want to explore further.
+- **`03_Software_Engineer_Interview_EN.ipynb`** - A fictional interview lab focused on Python, Java and debugging. This is an additional notebook, not covered during the workshop, for those who want to explore further.
 - **`workshop_support.py`** - Helper functions used by the notebooks.
 - **`requirements.txt`** - The pinned Python dependencies for the workshop environment.
-- **`WORKSHOP_HANDBOOK_EN.html`** - A browser-friendly reference with copyable code, the worksheet, example solutions, theory and the complete source list. It does not execute Python or call a model.
+- **`documents/WORKSHOP_HANDBOOK_EN.html`** - A browser-friendly reference with copyable code, the worksheet, example solutions, theory and the complete source list. It does not execute Python or call a model.
+
+## Documents and structure
+
+Supporting workshop documents are grouped in the `documents/` folder:
+
+```text
+documents/
+├── Recruitment_Coach_EN.pptx
+├── WORKSHOP_HANDBOOK_EN.html
+├── exercise_code_explanation_EN/
+│   ├── explanation_01_Recruitment_Coach_C01-C26.md
+│   ├── explanation_02_Agent_Playground.md
+│   └── explanation_03_Software_Engineer_Interview.md
+└── exercise_code_explanation_PL/
+	├── wyjasnienie_01_Recruitment_Coach_C01-C26.md
+	├── wyjasnienie_02_Agent_Playground.md
+	└── wyjasnienie_03_Software_Engineer_Interview.md
+```
+
+`Recruitment_Coach_EN.pptx` is the presentation slides shown during the workshop.
+
+The `exercise_code_explanation_EN/` folder contains English explanations of the notebook cells, including for the optional `02_Agent_Playground_EN.ipynb` and `03_Software_Engineer_Interview_EN.ipynb` notebooks. The matching Polish explanations are kept in `exercise_code_explanation_PL/`.
 
 ## Recommended order
 
-1. Open the [preparation repository](https://github.com/ai-krk/woman_in_tech_prep), read `PREPARE_YOUR_LAPTOP_EN.pdf` and complete the setup.
-2. Open `00_Preflight_EN.ipynb` in desktop VS Code.
-3. Select the workshop `.venv` kernel and run the preflight notebook one cell at a time.
-4. Keep `workshop_support.py` in the same folder as the notebooks.
-5. On the workshop day, open `01_Recruitment_Coach_EN.ipynb` when the facilitator asks.
-6. Use `WORKSHOP_HANDBOOK_EN.html` as a browser reference while working through the lab.
+1. Open `00_Preflight_EN.ipynb` in desktop VS Code.
+2. Select the workshop `.venv` kernel and run the notebook one cell at a time.
+3. Keep `workshop_support.py` in the same folder as the notebooks and use the explanations in `documents/exercise_code_explanation_EN/` as a reference when needed.
+4. Open `01_Recruitment_Coach_EN.ipynb` when the facilitator asks.
+5. Use `documents/WORKSHOP_HANDBOOK_EN.html` as a browser reference while working through the lab.
+6. Optionally, once the guided lab is done, explore `02_Agent_Playground_EN.ipynb` and `03_Software_Engineer_Interview_EN.ipynb`. These are not covered during the workshop.
 
 The learning pattern is: **predict → run → inspect → edit one thing → check again**.
 
